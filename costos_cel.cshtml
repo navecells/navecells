@@ -1,0 +1,11 @@
+﻿@{
+    Page.Title = "Costos";
+  var db = Database.Open("bd-celulares");
+  var datos = db.Query("SELECT Name, Price FROM PRODUCTS");
+  var myChart = new Chart(width: 500, height: 500)
+  .AddTitle("Costo de celulares")
+  .AddSeries("Default", chartType: "Bar",
+  xValue: datos, xField: "Name",
+  yValues: datos, yFields: "Price")
+  .Write();
+}

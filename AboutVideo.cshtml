@@ -1,0 +1,24 @@
+﻿@{
+    Page.Title = "Página con el video";
+}
+
+<section id="main">
+    <h1>Breve descripción de Fourth Coffee</h1>
+
+<video controls>
+<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+<source src="Videos/big_buck_bunny.mp4" type="video/mp4">
+Su navegador no soporta videos de tipo H.264/MP4.
+</video>
+</section>
+
+<div id="sidebar">
+    @*@Twitter.Search(
+        "#putyourhashtaghere", 
+        caption: "Búscanos", 
+        backgroundShellColor: "#e6e3d8", 
+        tweetsBackgroundColor: "#fdfcf7", 
+        shellColor: "#696969",
+        tweetsColor: "#696969",
+        tweetsLinksColor: "#a52f09")*@
+</div>
